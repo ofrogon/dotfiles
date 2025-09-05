@@ -53,10 +53,11 @@
       "critical": 15
     },
     "format": "{icon}",
+    "format-discharging": "{icon} {capacity}%",
     "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
     "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
     "format-charging": "󰂄 {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-plugged": "%",
     "format-alt": "{icon} {time}",
     "format-full": "󱈑",
     "format-icons": [

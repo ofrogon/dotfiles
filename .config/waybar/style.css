@@ -1,7 +1,7 @@
 @import "macchiato.css";
 
 * {
-  font-family: JetBrainsMono Nerd Font;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 15px;
   min-height: 0;
 }
@@ -53,7 +53,7 @@
   color: @blue;
   border-radius: 0.5rem;
   margin-right: 1rem;
-  font-family: JetBrainsMono Nerd Font Bold;
+  font-weight: bolder;
 }
 
 #bluetooth {
