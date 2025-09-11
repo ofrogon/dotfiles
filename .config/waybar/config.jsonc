@@ -99,7 +99,7 @@
         ""
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pidof wiremix || wezterm start --class Wiremix -e wiremix"
   },
   "custom/lock": {
     "tooltip": false,
