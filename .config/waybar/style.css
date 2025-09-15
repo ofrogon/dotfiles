@@ -12,6 +12,10 @@
   margin: 5px;
 }
 
+button:hover {
+    background: inherit;
+}
+
 #workspaces {
   border-radius: 0.5rem;
   margin: 5px;
@@ -33,6 +37,8 @@
 #workspaces button:hover {
   color: @sapphire;
   border-radius: 0.5rem;
+  background-color: transparent;
+  border-color: @mauve;
 }
 
 #network,

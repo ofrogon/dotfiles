@@ -22,7 +22,12 @@
     "sort-by-name": true,
     "format": " {name} {icon} ",
     "format-icons": {
-      "default": ""
+      "default": "",
+      "1": "󰭹",
+      "2": "",
+      "3": "",
+      "4": "󰣇",
+      "5": ""
     },
     "persistent-workspaces": {
       "1": [],
