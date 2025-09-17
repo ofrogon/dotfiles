@@ -15,13 +15,10 @@ stow . -t ~
 git clone https://github.com/orangci/walls-catppuccin-mocha.git ~/.config/backgrounds/
 ```
 
-
 ## Configurer Tmux
+
 ```bash
-
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-```
 ```
 
 Démarrer `tmux`, puis `Ctrl+Space I` et l'installation des plugins devrait se faire.
