@@ -3,17 +3,18 @@
 -- Add any additional options here
 
 local opt = vim.opt
+local cmd = vim.cmd
+local keymap = vim.keymap
 
-opt.relativenumber = false
+opt.relativenumber = true
 
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+cmd("set expandtab")
+cmd("set tabstop=2")
+cmd("set softtabstop=2")
+cmd("set shiftwidth=2")
 
 -- Navigate vim panes better
-vim.keymap.set('n', '<c-k>', ':windcmd k<CR>')
-vim.keymap.set('n', '<c-j>', ':windcmd j<CR>')
-vim.keymap.set('n', '<c-h>', ':windcmd h<CR>')
-vim.keymap.set('n', '<c-l>', ':windcmd l<CR>')
-
+keymap.set("n", "<c-k>", ":windcmd k<CR>")
+keymap.set("n", "<c-j>", ":windcmd j<CR>")
+keymap.set("n", "<c-h>", ":windcmd h<CR>")
+keymap.set("n", "<c-l>", ":windcmd l<CR>")
