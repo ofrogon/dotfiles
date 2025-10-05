@@ -7,6 +7,8 @@ local cmd = vim.cmd
 local keymap = vim.keymap
 
 opt.relativenumber = true
+opt.conceallevel = 0 -- For Markdown
+opt.concealcursor = "" -- For Markdown
 
 cmd("set expandtab")
 cmd("set tabstop=2")

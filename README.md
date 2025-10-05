@@ -22,3 +22,4 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 Démarrer `tmux`, puis `Ctrl+Space I` et l'installation des plugins devrait se faire.
+
