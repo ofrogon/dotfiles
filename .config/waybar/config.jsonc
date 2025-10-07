@@ -12,6 +12,7 @@
     "network",
     "pulseaudio",
     "battery",
+    "power-profiles-daemon",
     "bluetooth",
     "tray",
     "custom/lock",
@@ -93,6 +94,17 @@
     "format-connected": "󰂯",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆"
+    }
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
