@@ -131,7 +131,7 @@ button:hover {
 #custom-expand-icon {
     border-radius: 0.5rem 0 0 0.5rem;
     margin-left: 5px;
-    color: @blue;
+    color: @lavender;
 }
 
 #tray {
