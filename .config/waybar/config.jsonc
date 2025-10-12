@@ -106,7 +106,7 @@
     }
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon}",
     "format-muted": "",
     "format-icons": {
       "default": [
@@ -115,7 +115,8 @@
         ""
       ]
     },
-    "on-click": "pidof wiremix || wezterm start --class Wiremix -e wiremix"
+    "on-click": "pidof wiremix || wezterm start --class Wiremix -e wiremix",
+    "tooltip-format": "{desc} - {volume}%"
   },
   "custom/lock": {
     "tooltip": false,
@@ -147,7 +148,7 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-    "group/tray-expander": {
+  "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 600,
@@ -163,5 +164,5 @@
   "custom/expand-icon": {
     "format": "",
     "tooltip": false
-  },
+  }
 }
