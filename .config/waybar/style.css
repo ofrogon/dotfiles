@@ -50,7 +50,8 @@ button:hover {
 #bluetooth,
 #power-profiles-daemon,
 #custom-lock,
-#custom-power {
+#custom-power,
+#custom-notification {
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
@@ -121,6 +122,11 @@ button:hover {
     margin-right: 5px;
     border-radius: 0 0.5rem 0.5rem 0;
     color: @red;
+}
+
+#custom-notification {
+    border-radius: 0;
+    color: @peach;
 }
 
 #tray {
