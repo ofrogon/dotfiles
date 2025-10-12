@@ -47,14 +47,22 @@ button:hover {
 #clock,
 #battery,
 #pulseaudio,
-#bluetooth,
-#power-profiles-daemon,
 #custom-lock,
 #custom-power,
-#custom-notification {
+#custom-expand-icon {
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
+}
+
+#bluetooth,
+#power-profiles-daemon,
+#custom-notification {
+  background-color: @surface1;
+  padding: calc(0.5rem - 3px) 1rem;
+  margin: 5px 0;
+  border-top: 3px solid @surface0;
+  border-bottom: 3px solid @surface0;
 }
 
 #clock {
@@ -66,8 +74,6 @@ button:hover {
 
 #bluetooth {
   color: @blue;
-  border-radius: 0 0.5rem 0.5rem 0;
-  margin-right: 5px;
 }
 
 #power-profiles-daemon.power-saver {
@@ -84,6 +90,8 @@ button:hover {
 
 #battery {
   color: @green;
+  border-radius: 0 0.5rem 0.6rem 0;
+  margin-right: 5px;
 }
 
 #battery.charging {
@@ -94,18 +102,9 @@ button:hover {
   color: @red;
 }
 
-#backlight {
-  color: @yellow;
-}
-
-#backlight, #battery {
-    border-radius: 0;
-}
-
 #network {
   color: @yellow;
-  border-radius: 0.5rem 0 0 0.5rem;
-  margin-left: 5px;
+  border-radius: 0;
 }
 
 #pulseaudio {
@@ -127,6 +126,12 @@ button:hover {
 #custom-notification {
     border-radius: 0;
     color: @peach;
+}
+
+#custom-expand-icon {
+    border-radius: 0.5rem 0 0 0.5rem;
+    margin-left: 5px;
+    color: @blue;
 }
 
 #tray {

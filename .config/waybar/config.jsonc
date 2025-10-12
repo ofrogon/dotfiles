@@ -9,12 +9,10 @@
     "clock"
   ], // "hyprland/window"
   "modules-right": [
+    "group/tray-expander",
     "network",
     "pulseaudio",
     "battery",
-    "power-profiles-daemon",
-    "custom/notification",
-    "bluetooth",
     "tray",
     "custom/lock",
     "custom/power"
@@ -129,7 +127,7 @@
     "on-click": "systemctl poweroff",
     "format": "⏻"
   },
- "custom/notification": {
+  "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
@@ -148,5 +146,22 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+    "group/tray-expander": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "tray-group-item"
+    },
+    "modules": [
+      "custom/expand-icon",
+      "power-profiles-daemon",
+      "custom/notification",
+      "bluetooth"
+    ]
+  },
+  "custom/expand-icon": {
+    "format": "",
+    "tooltip": false
   },
 }
