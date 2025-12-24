@@ -105,5 +105,5 @@ alias ls="eza --icons --group-directories-first"
 alias ll="eza --icons --group-directories-first -l"
 ## Better cat
 alias cat=bat
-## Better ls
+## Better cd
 eval "$(zoxide init zsh)"

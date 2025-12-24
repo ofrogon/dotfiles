@@ -1,4 +1,3 @@
 font-family = JetBrainsMono Nerd Font
 theme = catppuccin-macchiato.conf
-background-opacity = 0.95
-window-decoration = none
+background-opacity = 0.90
