@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local commands = require("commands")
 local gpu_adapters = require("utils.gpu_adapter")
+local platform = require("utils.platform")
 
 local config = wezterm.config_builder()
 
@@ -26,10 +27,6 @@ config.color_scheme = "Catppuccin Macchiato"
 
 -- Appearance
 config.cursor_blink_rate = 0
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
--- config.hide_tab_bar_if_only_one_tab = true
-config.show_tabs_in_tab_bar = false
-config.show_new_tab_button_in_tab_bar = false
 config.window_padding = {
 	left = 4,
 	right = 4,
@@ -37,7 +34,6 @@ config.window_padding = {
 	bottom = 0,
 }
 config.window_background_opacity = _windowTransparency
-config.use_fancy_tab_bar = true
 config.window_frame = {
 	inactive_titlebar_bg = _screenBorderColor,
 	active_titlebar_bg = _screenBorderColor,
@@ -54,6 +50,18 @@ config.max_fps = 120
 config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 config.webgpu_preferred_adapter = gpu_adapters:pick_best()
+
+-- Custom elements
+if platform.is_linux then
+	config.hide_tab_bar_if_only_one_tab = true
+	config.use_fancy_tab_bar = false
+
+	config.window_decorations = "RESIZE"
+else
+	config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+
+	require("theme.tab-bar")
+end
 
 -- Custom commands
 wezterm.on("augment-command-palette", function()
