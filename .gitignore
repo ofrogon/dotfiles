@@ -1,2 +1,9 @@
 .config/nvim/lazy-lock.json
+
+# Herdr
+.config/herdr/*.sock
+.config/herdr/*.log
+.config/herdr/session.json
+.config/herdr/.plugins.lock
+
 .DS_Store
